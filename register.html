@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/design.css">
+  <script src="https://kit.fontawesome.com/e60c13f02f.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  <link rel="stylesheet" href="css/Contact-Us.css">
+
+
+  <style>
+    .btn-1 {
+      position: relative;
+      font-size: 18px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      padding: 5px;
+      transition: .1s;
+    }
+
+    .btn-1::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.185rem;
+      background: #fff;
+      left: 0%;
+      bottom: -5px;
+      transition: 0.25s ease;
+
+
+    }
+
+    .btn-center::after {
+      transform: scale(0, 1);
+
+    }
+
+    .btn-center:hover::after {
+      transform: scale(1, 1);
+
+    }
+
+    .scrolled {
+      background-color: burlywood !important;
+      transition: 2s ease-in-out;
+    }
+
+    .bgTransparent {
+      background-color: transparent;
+    }
+
+    .reg:hover {
+      background-color: white !important;
+      color: #bea06d;
+      transition: .4s ease-out;
+    }
+  </style>
+
+  <title>REGISTER PAGE</title>
+</head>
+
+<body style="  background-color: rgb(238, 225, 225);">
+
+
+  <body>
+
+    <div class="loader1"
+      style="z-index: 999999;display: block;position:relative;width:100%;height:100vh;background-color: rgb(236, 221, 224)">
+      <div class="loader"></div>
+    </div>
+
+    <nav id="navbar" class="px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed  w-full z-20 top-0 left-0 bgcolor bgTransparent"
+      style="z-index: 99;">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="Home.html" class="flex items-center" id="logo">
+          <img width="60px" src="images\logo.png" class="mr-3 " alt="Flowbite Logo">
+
+        </a>
+        <div class="flex md:order-2">
+
+          <button data-collapse-toggle="navbar-sticky" type="button" style="margin-right: 5rem;"
+            class="inline-flex  items-center p-2 text-white rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only text-white bg-transparent">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class=" hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="bg-transparent  flex flex-col p-4 mt-4  rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+            <li>
+              <a href="Home.html" class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent text-white"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="About Us.html"
+                class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">About</a>
+            </li>
+            <li>
+              <a href="register.html"
+                class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">Register</a>
+            </li>
+            <li>
+              <a href="Contact-Us.html"
+                class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">Contact</a>
+            </li>
+            <li>
+              <a href="Gallery.html"
+                class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">Gallery</a>
+            </li>
+            <li >
+              <a href="Login.html"
+                class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">
+                <i class='fas fa-user-alt'></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <div class="main" style="display: block;position: relative;">
+      <img src="images/IMG_5089-scaled.webp" alt="" style="width: 100%;">
+      <div class="register"
+        style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;position: absolute ;top: 7rem;left: 1rem;color: #fff; background-color: #bea06d;padding: 6rem 2rem;">
+        <p style="font-size: 2.5rem;font-weight:bolder;line-height: 3rem;margin-bottom:1rem ;">
+          REGISTER YOUR <br> WEDDING <br>
+
+        </p>
+        <h4 style="font-weight: 300;font-size: 1.3rem;margin-bottom:2rem ;">Lorem ipsum dolor sit amet consectetur
+          adipisicing <br> elit. Libero obcaecati consequatur voluptates atque <br> ratione non debitis, provident id
+          temporibus quidem!<br> ratione non debitis, provident id temporibus quidem</h4>
+
+        <a class="reg" href="#reg"
+          style="font-size: 1.5rem;font-weight: 400;line-height: 2rem;background:transparent;border:2px solid white;padding:7px 20px;">GO
+          TO REGISTERATION FORM</a>
+      </div>
+    </div>
+
+
+
+
+    <div id="reg"></div>
+
+    <div>
+      <p
+        style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 3rem;font-weight:700;text-align:center;margin-top: 6rem;">
+        MARRAIGE CERTIFICATE</p>
+
+      <form data-aos="fade-up" action=""
+        style="margin-top: 2rem;text-align: center;justify-content: center;align-items: center;">
+
+        <label class="text">Name Of The Husband</label><br>
+        <br>
+        <input type="text" class="box bg-transparent" placeholder="First Name" id="firstname" required> &emsp; &emsp;
+        <input type="text" class="box bg-transparent" placeholder="Middle Name" id="middlename" required> &emsp; &emsp;
+        <input type="text" class="box bg-transparent" placeholder="Last Name" id="lastname" required><br>
+        <br>
+        <br>
+
+        <label class="text">Name Of The Wife</label><br>
+        <br>
+        <input type="text" class="box bg-transparent" placeholder="First Name" id="wfname" required> &emsp; &emsp;
+        <input type="text" class="box bg-transparent" placeholder="Middle Name" id="wmname" required> &emsp; &emsp;
+        <input type="text" class="box bg-transparent" placeholder="Last Name" id="wlname" required><br>
+        <br><br>
+
+        <label class="text">Date</label><br>
+        <br>
+        <input class="bg-transparent" id="date" type="date"><br>
+        <br>
+        <br>
+        <br>
+        <div style="display:block; position:relative;  "><label class="text1">Husband signature</label>
+          <center><canvas id="signature" width="450" height="150" style="border: 1px solid black;"></canvas></center>
+          <br>
+          <button id="clear-signature">Clear</button><br>
+        </div>
+        <br>
+        <br>
+        <div style="display:block; position:relative;   "><label class="text1">Wife Signature </label>
+          <center><canvas id="signatureW" width="450" height="150" style="border: 1px solid black;"></canvas></center>
+          <br>
+          <button id="clear-signaturew">Clear</button><br>
+        </div>
+        <br>
+        <br>
+        <label class="text">Place of marriage</label><br>
+        <br>
+        <select name="" id="pm" class="bg-transparent">
+          <option value=""></option>
+          <option value="outdoor">Outdoor</option>
+          <option value="indoor">Indoor</option>
+          <option value="banquet">Banquet</option>
+          <option value="halls">Halls</option>
+          <option value="beaches">Beaches</option>
+          <option value="atfarmhouse">At farmhouse</option>
+        </select>
+        <br>
+        <br>
+        <input id="btn" type="button" value="SUBMIT" data-modal-toggle="popup-modal">
+
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="foot" style="background-color: white;">
+      <!-- 1st Container -->
+      <div class="conA">
+        <section class="sec">
+          <div class="con1">
+            <h2 class="h2a">Join our secret society</h2>
+            <p class="p1">Signup and recieve 10% of your firts plan</p>
+            <form class="form1" style="display: flex;">
+              <input type="email" placeholder="Your Email Address" id="in1">
+              <button type="button" id="but1" style="font-weight: 900;" onclick="Send()">></button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <!-- 2nd Container -->
+      <div class="conB">
+        <!-- Section 2a -->
+        <section class="sec2a col-lg-3 col-md-3 col-sm-3">
+          <div class="con2a">
+            <div class="con2b">
+              <h4 class="h4a">The<br>
+                Sky is the<br>
+                Limit
+              </h4>
+            </div>
+          </div>
+        </section>
+        <!-- Section 2b -->
+        <section class="sec2b col-lg-3 col-md-3 col-sm-3">
+          <div class="con2ba" style="    margin-left: 3rem;">
+            <h3 class="heading-font">Copyright</h3>
+            <p class="p2b">© Wedding Planner 2022<br>
+              Design &amp; Development by </a><br>
+            </p>
+            <a href="" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">Home</a> <br>
+            <a href="" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">About US</a> <br>
+            <a href="" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">Register</a> <br>
+            <a href="Contact-Us.html" class="acv"
+              style="list-style: none;text-decoration: none; color: burlywood;">Contact Us</a> <br>
+            <a href="Gallery.html" class="acv"
+              style="list-style: none;text-decoration: none; color: burlywood;">Gallery</a>
+          </div>
+        </section>
+        <!-- Section 2c -->
+        <section class="sec2c col-lg-3 col-md-3 col-sm-3" style="    margin-left: 3rem;">
+          <div class="con2c">
+            <h3 class="heading-font">Contact</h3>
+            <div class="con2cc">
+              <p class="p2c">SD-1, Block A North Nazimabad Town, <br>
+                Karachi, Karachi City, Sindh 74700.<br>
+                Weddingpalnner@gmail.com<br>
+                <a href="tel:+91-3172166223" style="text-decoration: none; color: rgb(179, 134, 20);">+91 3172166223</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section 2d -->
+        <section class="sec2d col-lg-3 col-md-3 col-sm-3" style="    margin-left: 3rem;">
+          <div class="con2d">
+            <h3 class="heading-font">Follow Us</h3>
+            <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-pinterest"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 3rd Container -->
+      <div class="conC">
+        <p class="p1c">Let's talk about your wedding</p>
+        <div class="ConCa">
+          <a href="" class="aC">Book Wedding Planner</a>
+          <a href="" class="aC">Tweet</a>
+          <a href="" class="aC">Share Via FB</a>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <!-- <button class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" >
+  Toggle modal
+</button> -->
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/sig_pad.js"></script> -->
+
+    <script>
+      $(document).ready(function () {
+
+        var canvas = document.getElementById("signature");
+        var signaturePad = new SignaturePad(canvas);
+
+        $('#clear-signature').on('click', function () {
+          signaturePad.clear();
+        });
+
+
+        var canvasone = document.getElementById("signatureW");
+        var signaturePad2 = new SignaturePad(canvasone);
+
+        $('#clear-signaturew').on('click', function () {
+          signaturePad2.clear();
+        });
+
+        $("#btn").click(function () {
+          var fname = $("#firstname").val();
+          var mname = $("#middlename").val();
+          var lname = $("#lastname").val();
+          var wfname = $("#wfname").val();
+          var wmname = $("#wmname").val();
+          var wlname = $("#wlname").val();
+          var marriageplace = $("#pm").val();
+          var date = $("#date").val();
+
+          if (fname == '' || mname == '' || lname == '' || wfname == '' || wmname == '' || wlname == '' || marriageplace == '' || date == '') {
+            // alert("checkk")
+            swal({
+              title: "Fields Empty",
+              text: "Please Check The Missing Fields!!!",
+              icon: "warning",
+              button: "Ok",
+            });
+          }
+          else {
+            swal({
+              title: "Successfully Submited",
+              text: "Thanks For Choosing Our Website For Your Blessed Wedding!",
+              icon: "success",
+              button: "Yess!!",
+            });
+          }
+        });
+
+
+      });
+    </script>
+    <script>
+      setTimeout(function () {
+        $(".loader1").fadeToggle();
+
+      }
+        , 2000);
+
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          // alert("working")
+
+          $('#navbar').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+      });
+    </script>
+
+
+
+
+
+    <script>
+      AOS.init({
+        offset: -300,
+        duration: 1000,
+      });
+
+    </script>
+
+  </body>
+
+</html>

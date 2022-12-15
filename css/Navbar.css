@@ -1,0 +1,46 @@
+.bgcolor{
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width:767px) {
+    
+    .bg-transparent{
+        background-color: #cbc5c5 !important;
+       
+    }
+  
+}
+.bg-transparent{
+ background-color: transparent;       
+}
+.btn-1 {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+
+    transition: .1s;
+}
+
+.btn-1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.185rem;
+    background: #fff;
+    left: 0%;
+    bottom: -5px;
+    transition: 0.25s ease;
+
+
+}
+
+.btn-center::after {
+    transform: scale(0, 1);
+
+}
+
+.btn-center:hover::after {
+    transform: scale(1, 1);
+
+}

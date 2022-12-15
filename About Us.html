@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  <script src="https://kit.fontawesome.com/e60c13f02f.js" crossorigin="anonymous"></script>
+  
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/Contact-Us.css">
+  <style>
+
+
+.btn-1 {
+            position: relative;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            transition: .1s;
+        }
+        
+        .btn-1::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.185rem;
+            background: #fff;
+            left: 0%;
+            bottom: -5px;
+            transition: 0.25s ease;
+        
+        
+        }
+        
+        .btn-center::after {
+            transform: scale(0, 1);
+        
+        }
+        
+        .btn-center:hover::after {
+            transform: scale(1, 1);
+        
+        }
+         
+
+.scrolled{
+    background-color: burlywood !important;
+    transition: 2s ease-in-out;
+  }
+  .bgTransparent{
+    background-color: transparent;
+  }
+
+  
+
+ 
+
+
+  </style>
+  <title>AboutUs</title>
+</head>
+
+<body>
+
+
+  <div class="loader1" style="z-index: 999999;;display: block;position:relative;width:100%;height:100vh;background-color: rgb(236, 221, 224);">
+    <div class="loader"></div>
+</div>
+
+
+  <nav id="navbar" class=" px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0  bgTransparent bgcolor"
+  style="z-index: 99;">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <a href="index.html" class="flex items-center">
+      <img width="60px" src="images\logo.png" class="mr-3 "
+        alt="Flowbite Logo">
+
+    </a>
+    <div class="flex md:order-2">
+     
+      <button data-collapse-toggle="navbar-sticky" type="button" 
+      class="inline-flex  items-center p-2 text-white rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      aria-controls="navbar-sticky" aria-expanded="false">
+      <span class="sr-only text-white bg-transparent">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    </div>
+    <div class=" hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul
+        class="bg-transparent  flex flex-col p-4 mt-4  rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+        <li>
+          <a href="Home.html" class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent text-white"
+            aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="About Us.html"
+            class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">About</a>
+        </li>
+        <li>
+          <a href="register.html"
+            class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">Register</a>
+        </li>
+        <li>
+          <a href="Contact-Us.html"
+            class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">Contact</a>
+        </li>
+        <li>
+          <a href="Gallery.html"
+            class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">Gallery</a>
+        </li>
+        <li >
+          <a href="Login.html"
+            class="btn-1 btn-center block py-2 pr-4 pl-3 text-white bg-transparent  md:p-0 text-white ">
+            <i class='fas fa-user-alt'></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  
+
+
+
+
+  <div class="flex">
+    <div class="container" style="position:relative;overflow: hidden;">
+      <img  src="images/shutterstock_273944618-min.jpg" alt="Avatar"
+        class="image">
+      <div class="overlay1">
+        <div class="text">What We Do <br>
+        <span class="story" > <a href="#story"> Our Story </a></span></div>
+      </div>
+    </div>
+
+    <div class="container" style="position:relative;overflow: hidden;">
+      <img src="images/shutterstock_255665995-min.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Who We Are <br>
+          <span class="story" ><a href="#team"> Our Team</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div data-aos="fade-left">
+  <section class="text-gray-900 body-font" >
+    <div id="story"  class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class=" head1 title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About Us</h1>
+        <p class="para1 mb-8 leading-relaxed">Wedding Planner is a wedding planning firm specializing in Month-Of
+          Coordination in Venice and Rome. We work with knowledgeable, planning-savvy engaged couples who want to plan
+          independently, but need a professional to tie loose ends in their final pre-wedding month and provide on-site
+          management on their big day.</p>
+      </div>
+
+      <div class=" container2  image1 lg:max-w-lg lg:w-full md:w-1/2 w-5/6" style=" position: relative;">
+        <img class="object-cover object-center rounded image2 " alt="hero" src="images/shutterstock_379219543-min.jpg" style="height: 30rem;">
+        <div class="middle">
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+  <section class="text-gray-600 body-font">
+    <div  class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" data-aos="fade-right">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"
+          src="images/shutterstock_476920312-min.jpg">
+      </div>
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class=" head1 title-font sm:text-4xl text-3xl mb-4 font-medium " style="line-height:4rem ;">Planning a Destination
+          Wedding?</h1>
+        <p class="para1 mb-8 leading-relaxed">As experienced destination wedding planners; our promise is to plan every single
+          detail on behalf of you at each stage and just like you would do in the desired professional way.
+
+          Either its only for you two or with your guests up to 200. According to your wishes; we will offer you venues
+          and suggest you the best locations. While sorting out the paperwork and other legal requirements, well be
+          bargaining with vendors and look after their payments on behalf of you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto" data-aos="fade-up">
+      <div class=" head1  flex flex-col text-center w-full mb-20">
+        <h1 style="font-size:80px ;" class=" head1  text-2xl font-medium title-font mb-4 text-gray-900">OUR CLIENTS</h1>
+        
+        <p style="font-size:30px ;" class="lg:w-2/3 mx-auto leading-relaxed text-base">Breath Taking Moments with Our
+          Clients</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class=" pic flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/Cave-B-Winery-Wedding-Photographer-Cave-B-Winery-wedding-photos-Eastern-WA-wedding-Photographer-Cave-B-Winery-wedding-on-film-film-photographer-Eastern-WA-Lora-Grady-3.jpg">
+          </div>
+        </div>
+
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class=" pic flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/SD_7.jpg">
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class=" pic flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/desktop-1600x900.jpg">
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class=" pic4 h-full flex flex-col items-center text-center">
+            <img alt="team" class=" pic flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+              src="images/Wedding-pictures-Beautiful-married-couple-Romantic-Wallpaper-Hd-840x525.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <div id="team"></div>
+<div data-aos="zoom-in-up">
+  <center><p style="font-size: 4rem;font-weight:700;color:burlywood;">OUR TEAM</p></center>
+  <section class="text-gray-600 body-font" style="margin-top: -2rem;">
+    <div  class="container px-5 py-24 mx-auto" >
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/2">
+          <div
+            class=" h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class=" one flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="images/shutterstock_152779688-min.jpg" style="width:60%; height: 40vh;">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Brian M. Woolard</h2>
+              <p class="mb-4">I have 10 years of experience in this business, and during that time Ive grown many
+                strong relationships and friendships with so many wonderful vendors, and it has truly been my genuine
+                joy to work side-by-side with couples and their families during their most memorable occasions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="images/shutterstock_424915459-min.jpg" style="width:60%; height: 40vh;">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Paula R. Ohare</h2>
+              <p class="mb-4">I have 10 years of experience in this business, and during that time Ive grown many
+                strong relationships and friendships with so many wonderful vendors, and it has truly been my genuine
+                joy to work side-by-side with couples and their families during their most memorable occasions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="images/shutterstock_273310274-min.jpg" style="width:60%; height: 40vh;">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Kim Bryant</h2>
+              <p class="mb-4">I have 10 years of experience in this business, and during that time Ive grown many
+                strong relationships and friendships with so many wonderful vendors, and it has truly been my genuine
+                joy to work side-by-side with couples and their families during their most memorable occasions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="images/shutterstock_259188416-min (1).jpg" style="width:60%; height: 40vh;">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Jeannette Walters</h2>
+              <p class="mb-4">I have 10 years of experience in this business, and during that time Ive grown many
+                strong relationships and friendships with so many wonderful vendors, and it has truly been my genuine
+                joy to work side-by-side with couples and their families during their most memorable occasions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+                                             <!-- Footer -->
+    <footer class="foot" style="background-color: white;">
+                                        <!-- 1st Container -->
+        <div class="conA">
+            <section class="sec">
+                <div class="con1">
+                    <h2 class="h2a">Join our secret society</h2>
+                    <p class="p1">Signup and recieve 10% of your firts plan</p>
+                    <form class="form1" style="display: flex;">
+                        <input type="email" placeholder="Your Email Address" id="in1">
+                        <button type="button" id="but1" style="font-weight: 900;" onclick="Send()">></button>
+                    </form>
+                </div>
+            </section>
+        </div>
+                                        <!-- 2nd Container -->
+        <div class="conB">
+                                         <!-- Section 2a -->
+            <section class="sec2a col-lg-3 col-md-3 col-sm-3">
+                <div class="con2a">
+                    <div class="con2b">
+                        <h4 class="h4a">The<br>
+                            Sky is the<br>
+                            Limit
+                        </h4>
+                    </div>
+                </div>
+            </section>
+                                        <!-- Section 2b -->
+            <section class="sec2b col-lg-3 col-md-3 col-sm-3">
+                <div class="con2ba" style="margin-left: 3rem;">
+                    <h3 class="heading-font">Copyright</h3>
+                    <p class="p2b" style="color: black;">© Wedding Planner 2022<br>
+                        Design &amp; Development by </a><br>
+                    </p>
+                    <a href="" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">Home</a> <br>
+                    <a href="" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">About US</a> <br>
+                    <a href="" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">Register</a> <br>
+                    <a href="Contact-Us.html" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">Contact Us</a> <br>
+                    <a href="Gallery.html" class="acv" style="list-style: none;text-decoration: none; color: burlywood;">Gallery</a>
+                </div>
+            </section>
+                                        <!-- Section 2c -->
+            <section class="sec2c col-lg-3 col-md-3 col-sm-3"  style="margin-left: 3rem;">
+            <div class="con2c">
+                <h3 class="heading-font">Contact</h3>			
+                <div class="con2cc">
+                    <p class="p2c"  style="color: black;">SD-1, Block A North Nazimabad Town, <br>
+                         Karachi, Karachi City, Sindh 74700.<br>
+                Weddingpalnner@gmail.com<br>
+                <a href="tel:+91-3172166223" style="text-decoration: none; color: rgb(179, 134, 20);">+91 3172166223</a></p>
+                </div>
+            </div>
+            </section>
+                                        <!-- Section 2d -->
+            <section class="sec2d col-lg-3 col-md-3 col-sm-3"  style="margin-left: 3rem;">
+                <div class="con2d">
+                    <h3 class="heading-font">Follow Us</h3>
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+                                        <!-- 3rd Container -->
+        <div class="conC">
+            <p class="p1c">Let's talk about your wedding</p>
+            <div class="ConCa">
+                <a href="" class="aC">Book Wedding Planner</a>
+                <a href="" class="aC">Tweet</a>
+                <a href="" class="aC">Share Via FB</a>
+            </div>
+        </div>
+
+    </footer>
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+     AOS.init({
+      offset: -300,
+      duration: 1000,
+    });
+  </script>
+
+
+<script>
+  setTimeout(function() {
+    $(".loader1").fadeToggle();
+    
+  }
+  ,2000);
+  
+  </script>
+
+<script>
+    $(document).ready(function() {
+  $(window).scroll(function(){
+    // alert("working")
+  
+    $('#navbar').toggleClass('scrolled',$(this).scrollTop()>50);
+  });
+  });
+</script>  
+
+
+</body>
+
+</html>
